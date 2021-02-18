@@ -2,10 +2,15 @@
 // Source file for node
 
 template<class ItemType>
-Node<ItemType>::Node(): next(nullptr){}
+Node<ItemType>::Node(){
+    next = nullptr;
+}
 
 template<class ItemType>
-Node<ItemType>::Node(const ItemType* anItem): item(anItem), next(nullptr){}
+Node<ItemType>::Node(const ItemType* anItem, Node<ItemType>& nextNodePtr){
+    item = anItem;
+    next = nullptr;
+}
 
 template<class ItemType>
 Node<ItemType>::Node(const ItemType& anItem, Node<ItemType>* nextNodePtr): item(anItem), next(nextNodePtr){}
