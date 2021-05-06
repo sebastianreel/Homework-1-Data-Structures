@@ -1,4 +1,4 @@
-# Homework 1
+# Program: Linked List
 
 ## Project Goals
 The goal of this project is to:
